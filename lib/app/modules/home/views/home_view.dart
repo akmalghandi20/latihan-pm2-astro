@@ -6,6 +6,8 @@ import 'package:myapp/app/modules/dosen/views/dosen_add_view.dart';
 import 'package:myapp/app/modules/dosen/views/dosen_view.dart';
 import 'package:myapp/app/modules/mahasiswa/views/mahasiswa_add_view.dart';
 import 'package:myapp/app/modules/mahasiswa/views/mahasiswa_view.dart';
+import 'package:myapp/app/modules/karyawan/views/karyawan_add_view.dart';
+import 'package:myapp/app/modules/karyawan/views/karyawan_view.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -40,9 +42,9 @@ class _DashboardAdminState extends State<DashboardAdmin> {
       'add': DosenAddView(),
     },
     {
-      'title': 'Data Pegawai',
-      'view': MahasiswaView(),
-      'add': MahasiswaAddView()
+      'title': 'Data Karyawan',
+      'view': KaryawanView(),
+      'add': KaryawanAddView()
     },
   ];
 
@@ -91,7 +93,7 @@ class _DashboardAdminState extends State<DashboardAdmin> {
                   color: Colors.white,
                 ),
                 Text(
-                  "Reflan Nuari",
+                  "Akmal Ghandi",
                   style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -149,7 +151,7 @@ class _DashboardAdminState extends State<DashboardAdmin> {
               Get.back();
             },
             leading: Icon(Icons.people),
-            title: Text('Data Pegawai'),
+            title: Text('Karyawan_22312137'),
             trailing: Icon(Icons.navigate_next),
             iconColor: Colors.red,
             textColor: Colors.red,

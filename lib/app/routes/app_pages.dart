@@ -4,6 +4,8 @@ import '../modules/dosen/bindings/dosen_binding.dart';
 import '../modules/dosen/views/dosen_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/karyawan/bindings/karyawan_binding.dart';
+import '../modules/karyawan/views/karyawan_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/mahasiswa/bindings/mahasiswa_binding.dart';
@@ -36,6 +38,11 @@ class AppPages {
       name: _Paths.DOSEN,
       page: () => DosenView(),
       binding: DosenBinding(),
+    ),
+    GetPage(
+      name: _Paths.KARYAWAN,
+      page: () => KaryawanView(),
+      binding: KaryawanBinding(),
     ),
   ];
 }
